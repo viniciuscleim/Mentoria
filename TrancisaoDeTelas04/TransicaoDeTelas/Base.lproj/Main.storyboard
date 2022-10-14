@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EWG-tR-jmy">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kIw-iq-t6I">
+            <objects>
+                <viewController id="OxI-Xh-eAI" customClass="ViewController" customModule="TransicaoDeTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dlb-vL-kDb" customClass="View">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kar-RB-XJg">
+                                <rect key="frame" x="157.66666666666666" y="404.66666666666669" width="75" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedButton:" destination="OxI-Xh-eAI" eventType="touchUpInside" id="VnN-dI-hPH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XIP-zl-N9I"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="Kar-RB-XJg" firstAttribute="centerX" secondItem="Dlb-vL-kDb" secondAttribute="centerX" id="TSS-zK-jXL"/>
+                            <constraint firstItem="Kar-RB-XJg" firstAttribute="centerY" secondItem="Dlb-vL-kDb" secondAttribute="centerY" id="bEu-LA-1QC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tFa-kN-S8Z"/>
+                    <connections>
+                        <segue destination="nOo-dE-sA6" kind="presentation" identifier="goTela02" id="Bdh-pE-wYY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QtL-sG-dn3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1189.2307692307693" y="-194.07582938388626"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BPY-MC-DOv">
+            <objects>
+                <viewController id="nOo-dE-sA6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QWT-zy-5K4">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rKl-Xo-0qc"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IAM-q7-5Cb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vy-MH-cgV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2029" y="-194"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hs7-MM-xX8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EWG-tR-jmy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dHT-Ul-Ctl">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OxI-Xh-eAI" kind="relationship" relationship="rootViewController" id="40A-YE-Tyh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AfF-P2-kQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="-194.07582938388626"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
