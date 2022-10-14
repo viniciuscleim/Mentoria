@@ -14,13 +14,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-   
+        
     @IBAction func tappedButton(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "goTela02", sender: nil)
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController
+        
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: false)
     }
-    
-    
     
 }
 
