@@ -21,23 +21,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configNameButton()
+      
         // Do any additional setup after loading the view.
     }
 
-        
+     
     @IBAction func tappedButton(_ sender: UIButton) {
         
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController
+        let vc = UIStoryboard(name: "SecondViewController", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController
         
-        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
-        
-        
-        
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: false)
     }
     
     func configNameButton() {
         
-        screamPassButton.setTitle("Vamos para proxima tela?", for: .normal)
+        screamPassButton.setTitle("Vamos para a proxima tela?", for: .normal)
     }
     
     
