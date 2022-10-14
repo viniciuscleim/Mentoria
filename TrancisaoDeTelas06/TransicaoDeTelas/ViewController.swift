@@ -7,10 +7,20 @@
 
 import UIKit
 
+
+
+
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var screamPassButton: UIButton!
+    
+   
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configNameButton()
         // Do any additional setup after loading the view.
     }
 
@@ -19,9 +29,17 @@ class ViewController: UIViewController {
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController
         
-       present(vc ?? UIViewController(), animated: true)
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
+        
+        
         
     }
+    
+    func configNameButton() {
+        
+        screamPassButton.setTitle("Vamos para proxima tela?", for: .normal)
+    }
+    
     
 }
 
