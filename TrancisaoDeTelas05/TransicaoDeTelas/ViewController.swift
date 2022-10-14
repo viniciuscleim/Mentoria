@@ -19,7 +19,8 @@ class ViewController: UIViewController {
         
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController
         
-        navigationController?.pushViewController(vc ?? UIViewController(), animated: false)
+       present(vc ?? UIViewController(), animated: true)
+        
     }
     
 }
