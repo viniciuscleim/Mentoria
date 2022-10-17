@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  FirstViewController.swift
 //  TransicaoDeTelas
 //
 //  Created by Vinicius Cleim on 17/10/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

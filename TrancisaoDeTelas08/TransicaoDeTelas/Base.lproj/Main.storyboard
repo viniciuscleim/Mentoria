@@ -22,20 +22,47 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="tappedButton:" destination="aJo-oP-Wqz" eventType="touchUpInside" id="oF6-qm-wCf"/>
+                                    <action selector="secondTappedButton:" destination="aJo-oP-Wqz" eventType="touchUpInside" id="L0Q-hV-gfu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCr-oz-oYg">
+                                <rect key="frame" x="25" y="191" width="340" height="35"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="firstTappedButton:" destination="aJo-oP-Wqz" eventType="touchUpInside" id="2oI-Bc-jh4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzz-8Q-Z7V">
+                                <rect key="frame" x="25" y="609.66666666666663" width="340" height="35"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="thirdTappedButton:" destination="aJo-oP-Wqz" eventType="touchUpInside" id="Nl1-xc-nGs"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IeG-9G-Kqe"/>
-                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="QnA-Ua-tbJ" firstAttribute="centerY" secondItem="wgr-mJ-dYX" secondAttribute="centerY" id="0Yb-3Y-gIt"/>
+                            <constraint firstItem="IeG-9G-Kqe" firstAttribute="trailing" secondItem="xCr-oz-oYg" secondAttribute="trailing" constant="25" id="5DT-YG-cUR"/>
                             <constraint firstItem="QnA-Ua-tbJ" firstAttribute="centerX" secondItem="wgr-mJ-dYX" secondAttribute="centerX" id="9Rr-4K-0xf"/>
+                            <constraint firstItem="dzz-8Q-Z7V" firstAttribute="leading" secondItem="IeG-9G-Kqe" secondAttribute="leading" constant="25" id="ByI-ej-cju"/>
+                            <constraint firstItem="dzz-8Q-Z7V" firstAttribute="top" secondItem="QnA-Ua-tbJ" secondAttribute="bottom" constant="170" id="ZcL-f6-m3E"/>
+                            <constraint firstItem="xCr-oz-oYg" firstAttribute="leading" secondItem="IeG-9G-Kqe" secondAttribute="leading" constant="25" id="pS9-21-lV7"/>
+                            <constraint firstItem="xCr-oz-oYg" firstAttribute="top" secondItem="IeG-9G-Kqe" secondAttribute="top" constant="100" id="r45-7Y-bXj"/>
+                            <constraint firstItem="dzz-8Q-Z7V" firstAttribute="top" secondItem="QnA-Ua-tbJ" secondAttribute="bottom" constant="170" id="twM-Oc-gFN"/>
+                            <constraint firstItem="IeG-9G-Kqe" firstAttribute="trailing" secondItem="dzz-8Q-Z7V" secondAttribute="trailing" constant="25" id="yid-4w-NYf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="398-Rq-hWS"/>
                     <connections>
-                        <outlet property="screamPassButton" destination="QnA-Ua-tbJ" id="t2F-nk-Xh4"/>
+                        <outlet property="firsPassButton" destination="xCr-oz-oYg" id="6ML-BM-fj4"/>
+                        <outlet property="secondPassButton" destination="QnA-Ua-tbJ" id="ZHS-B1-0vg"/>
+                        <outlet property="thirdPassButton" destination="dzz-8Q-Z7V" id="Gg7-7p-Ycc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABV-zt-DLi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -62,8 +89,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
