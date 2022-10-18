@@ -16,15 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem Vindo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBB-ub-LZd">
-                                <rect key="frame" x="25" y="197" width="340" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem vindo !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeW-eU-zqa">
+                                <rect key="frame" x="25" y="97" width="340" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbk-wT-0lh">
-                                <rect key="frame" x="174" y="411.66666666666669" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4J0-rz-Qyj">
+                                <rect key="frame" x="171" y="410" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -32,20 +32,20 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="ZBB-ub-LZd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="150" id="Cpf-nP-s0h"/>
-                            <constraint firstItem="qbk-wT-0lh" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="OrY-db-3le"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZBB-ub-LZd" secondAttribute="trailing" constant="25" id="gvU-dg-36n"/>
-                            <constraint firstItem="ZBB-ub-LZd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="oef-Ie-dMR"/>
-                            <constraint firstItem="qbk-wT-0lh" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="xIR-Sv-Np1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="LeW-eU-zqa" secondAttribute="trailing" constant="25" id="JLi-Na-b1H"/>
+                            <constraint firstItem="4J0-rz-Qyj" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Qff-wA-hEN"/>
+                            <constraint firstItem="4J0-rz-Qyj" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="gpw-pm-4j8"/>
+                            <constraint firstItem="LeW-eU-zqa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="tXX-mZ-WZL"/>
+                            <constraint firstItem="LeW-eU-zqa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="uHe-s3-PEx"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="nameLabel" destination="qbk-wT-0lh" id="TKa-bq-Vuy"/>
+                        <outlet property="nameLabel" destination="4J0-rz-Qyj" id="EME-9n-8GO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="4"/>
+            <point key="canvasLocation" x="140" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <resources>

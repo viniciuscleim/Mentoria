@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+   
     @IBOutlet weak var nameTextField: UITextField!
     
     
@@ -22,14 +23,14 @@ class ViewController: UIViewController {
     
     @IBAction func tappedButton(_ sender: UIButton) {
         
-        let vc = UIStoryboard (name: "SecondViewController", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController
+        let vc = UIStoryboard(name: "SecondViewController", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController
         
-        vc?.name = "\(nameTextField.text ?? "") \(lastNameTextField.text ?? "")" 
+        vc?.name = "\(nameTextField.text ?? "") \(lastNameTextField.text ?? "")"
         
-        
-       present(vc ?? UIViewController(), animated: true)
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: false)
+    }
+    
         
     }
     
-}
 
