@@ -12,13 +12,13 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var nameLastNameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     
-    var name: String = ""
-    var age: Int = 0
+    var vinicius: Pessoa?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLastNameLabel.text = name
-        ageLabel.text = String(age)
+        nameLastNameLabel.text = vinicius?.fullName
+        ageLabel.text = String(vinicius?.age ?? 0)
+        
 
         // Do any additional setup after loading the view.
     }

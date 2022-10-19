@@ -25,10 +25,15 @@ class ViewController: UIViewController {
         
         let vc = UIStoryboard(name: "SecondViewController", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController
         
-        vc?.name = nameLastNameTextField.text ?? ""
-        vc?.age = Int(ageTextField.text ?? "0") ?? 0
+        let marcelo = Pessoa(fullName: nameLastNameTextField.text ?? "", age: Int(ageTextField.text ?? "0") ?? 0)
+
+        vc?.vinicius = marcelo  
         
-        present(vc ?? UIViewController(), animated: false)
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: false)
+        
+        
+        
+      
     }
     
 
