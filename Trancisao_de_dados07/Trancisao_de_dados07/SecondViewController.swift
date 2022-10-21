@@ -11,8 +11,6 @@ class SecondViewController: UIViewController {
     
     
     @IBOutlet weak var fullNameLabel: UILabel!
-    
-    
     @IBOutlet weak var ageLabel: UILabel!
     
     var vini: Pessoa?
